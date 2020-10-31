@@ -13,7 +13,7 @@ b = int(b)
 c = input("Enter the value for 'c': ")
 c = int(c)
 
-print(f"For the quadrative equation {a}x^2 + {b}x + {c}")
+print(f"For the quadrative equation {a}x\u00b2 + {b}x + {c}")
 # ( -b +/- sqrt(b^2 - 4ac) ) / 2a
 x = b**2 - (4 * a * c)
 ans_1 = (-b + x) / 2 * a
