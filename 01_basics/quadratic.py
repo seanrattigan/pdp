@@ -5,10 +5,13 @@ line = "~" * 60
 print(line)
 print("\t\tQuadratic Equation Solver")
 print(line)
-# wirh these values the roots should be -1 and -3
-a = 1
-b = 4
-c = 3
+# with 1, 4, 3 the roots should be -1 and -3
+a = input("Enter the value for 'a': ")
+a = int(a)
+b = input("Enter the value for 'b': ")
+b = int(b)
+c = input("Enter the value for 'c': ")
+c = int(c)
 
 print(f"For the quadrative equation {a}x^2 + {b}x + {c}")
 # ( -b +/- sqrt(b^2 - 4ac) ) / 2a
