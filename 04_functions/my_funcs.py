@@ -56,6 +56,7 @@ def wage_calc(hours: float, rate: float):
         o_t_pay = rate * 1.5 * o_t_hours
         return rate * 39 + o_t_pay
 
+
 def wage_helper():
     """Helper function for wages
     """
@@ -63,7 +64,7 @@ def wage_helper():
     hours = float(hours)
     rate = input("Enter Rate of Pay: ")
     rate = float(rate)
-    pay = wage_calc(hours, rate)
+    pay = wage_calc(hours, rate)￼
     print(f"You will be paid €{pay:.2f}")
 
 def title(heading, sym):
@@ -78,8 +79,14 @@ def title(heading, sym):
     print(f"\t{heading}")
     print(line)
 
-# title("Payroll Program", "=")
-# wage_helper()
+title("Payroll Program", "=")
+while True:
+    wage_helper()
+    print("\nDo you want to go again?")
+    answer = input("Enter [Y] for Yes or any other key to exit: ")
+    if answer.upper() == "Y":
+        break
+
 
 def countdown(start=10):
     """A countdown for rockets
@@ -94,11 +101,15 @@ def countdown(start=10):
         counter -= 1
     print("--Blastoff---")
 
+
 # title("Final Countdown", "*")
 # countdown(5)
 # print(type(countdown))
+
+
 def hill_down(height: int):
     sym = "#"
+
 
 hill_down(7)
 # would return
