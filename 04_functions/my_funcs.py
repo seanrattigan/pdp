@@ -64,8 +64,9 @@ def wage_helper():
     hours = float(hours)
     rate = input("Enter Rate of Pay: ")
     rate = float(rate)
-    pay = wage_calc(hours, rate)￼
+    pay = wage_calc(hours, rate)
     print(f"You will be paid €{pay:.2f}")
+
 
 def title(heading, sym):
     """Generates a nice title for a CL program
@@ -78,6 +79,7 @@ def title(heading, sym):
     print(line)
     print(f"\t{heading}")
     print(line)
+
 
 title("Payroll Program", "=")
 while True:
