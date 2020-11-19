@@ -87,3 +87,34 @@ def end_other(a, b):
     # that's it done!
     return
 
+
+def xyz_there(s):
+    """
+    Return True if the given string contains an appearance 
+    of "xyz" where the xyz is not directly preceeded 
+    by a period (.). So "xxyz" counts but "x.xyz" does not.
+    xyz_there('abcxyz') → True
+    xyz_there('abc.xyz') → False
+    xyz_there('xyz.abc') → True
+
+    Args:
+        s (str): a string for proccessing
+
+    Returns:
+        bool: an indicator as to whether the substring 'xyz'
+        is there not preceded by a dot/period
+    """
+    # The way I approached this is:
+    # If I use a while loop, how far must I travel through the str? 
+    # at what index relative to len do I stop?
+    # while inside the chars I travel through
+    # check if the char I'm on AND the next two chars (a slice) 
+    # are equal to xyz.
+    # it may need a nested if and/or compound expression 
+    # to add the check after this for a dot before xyz
+    # if found at any point, return True- terminating the func call
+    # if you finish the while loop, and have not found a match,
+    # just return False.
+
+    
+    return True
