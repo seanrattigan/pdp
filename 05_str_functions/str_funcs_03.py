@@ -1,4 +1,4 @@
-# string exercises with decisions
+# string exercises 1-2 with decisions
 
 def checkends(s):
     """
@@ -116,5 +116,5 @@ def xyz_there(s):
     # if you finish the while loop, and have not found a match,
     # just return False.
 
-    
+
     return True
