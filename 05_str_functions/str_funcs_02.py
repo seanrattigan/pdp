@@ -37,7 +37,7 @@ def double_char2(s):  # do NOT use a ref like str for a variable!
     return new_str
 
 
-if __name__ == "__main__": # comment out any lines below you don't want to run
+if __name__ == "__main__":  # comment out any lines below you don't want to run
     t1 = double_char1('Hi-There')  # → 'HHii--TThheerree'
     print(t1)
     t2 = double_char2('Hi-There')  # → 'HHii--TThheerree'
