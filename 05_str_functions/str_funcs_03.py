@@ -63,6 +63,27 @@ def count_code(s):
     pass
 
 
+def end_other(a, b):
+    """
+    Given two strings, return True if either
+    of the strings appears at the very end of
+    the other string, ignoring case.
 
+    end_other('Hiabc', 'abc') → True
+    end_other('AbC', 'HiaBc') → True
+    end_other('abc', 'abXabc') → True 
 
+    Args:
+        a (str): a word
+        b (str): a word
+
+    Returns:
+        bool: True if one str is a substring of the other
+              at the end of the other str
+    """
+    # start with finding which str is longer
+    # ignore case
+    # use the hint to see how to use the endswith() method
+    # that's it done!
+    return
 
