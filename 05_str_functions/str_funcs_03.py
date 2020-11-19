@@ -16,4 +16,29 @@ def checkends(s):
     return s[0] == s[-1]
 
 
+def catdog(s):
+    """
+    Return True if the string "cat" and "dog" 
+    appear the same number of times in the given string.
+    
+    cat_dog('catdog') → True
+    cat_dog('catcat') → False
+    cat_dog('1cat1cadodog') → True
+
+    Args:
+        s (str): str for processing
+
+    Returns:
+        bool: True if 'cat' and 'dog' appear the same
+              number of times as substrings in the string  
+    """
+    cat_count = 0
+    dog_count = 0
+    return cat_count == dog_count
+
+
+
+
+
+
 
