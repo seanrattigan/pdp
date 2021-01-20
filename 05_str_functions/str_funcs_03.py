@@ -2,9 +2,9 @@
 
 def checkends(s):
     """
-    This function takes in a string s and returns 
-    True if the first character in s is the same 
-    as the last character in s. 
+    This function takes in a string s and returns
+    True if the first character in s is the same
+    as the last character in s.
     It returns False otherwise
 
     Args:
@@ -19,7 +19,7 @@ def checkends(s):
 def catdog(s):
     """
     Return True if the string "cat" and "dog"
-    appear the same number of times in the given string.
+    appear the same number of times in the given string
     
     cat_dog('catdog') → True
     cat_dog('catcat') → False
@@ -71,7 +71,7 @@ def end_other(a, b):
 
     end_other('Hiabc', 'abc') → True
     end_other('AbC', 'HiaBc') → True
-    end_other('abc', 'abXabc') → True 
+    end_other('abc', 'abXabc') → True
 
     Args:
         a (str): a word
@@ -90,8 +90,8 @@ def end_other(a, b):
 
 def xyz_there(s):
     """
-    Return True if the given string contains an appearance 
-    of "xyz" where the xyz is not directly preceeded 
+    Return True if the given string contains an appearance
+    of "xyz" where the xyz is not directly preceeded
     by a period (.). So "xxyz" counts but "x.xyz" does not.
     xyz_there('abcxyz') → True
     xyz_there('abc.xyz') → False
@@ -105,16 +105,14 @@ def xyz_there(s):
         is there not preceded by a dot/period
     """
     # The way I approached this is:
-    # If I use a while loop, how far must I travel through the str? 
+    # If I use a while loop, how far must I travel through the str?
     # at what index relative to len do I stop?
     # while inside the chars I travel through
-    # check if the char I'm on AND the next two chars (a slice) 
+    # check if the char I'm on AND the next two chars (a slice)
     # are equal to xyz.
-    # it may need a nested if and/or compound expression 
+    # it may need a nested if and/or compound expression
     # to add the check after this for a dot before xyz
     # if found at any point, return True- terminating the func call
     # if you finish the while loop, and have not found a match,
     # just return False.
-
-
-    return True
+    pass
