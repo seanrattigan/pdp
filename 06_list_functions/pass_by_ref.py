@@ -1,5 +1,4 @@
-import random
-
+# simple demo function for list
 rand_list = ["Noob",
              True,
              2,
@@ -11,8 +10,11 @@ rand_list = ["Noob",
 def mod(a_list):
     """
     (list of obj)
-    Prints out the index, value and type of
-    each object in the list
+    removes the last obj in the list
+    Note this modifies the list in
+    the global namespace, since the list is
+    passed by reference to the original,
+    and not a copy (by value)
     """
     a_list.pop()
     print("Done")
