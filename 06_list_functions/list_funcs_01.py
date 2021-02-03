@@ -1,7 +1,7 @@
 # @Author:xxx
 # @Date:2020-11-30 11:08:57
-# @LastModifiedBy:xxx
-# @Last Modified time:2020-11-30 11:12:00
+# @LastModifiedBy:srattigan
+# @Last Modified time:2021-02-03 20:29:35
 # list exercises not from Codingbat
 
 # imports here
@@ -114,11 +114,9 @@ def guess_animal(words=["pig", "cat", "dog", "mouse", "rat"]):
 
     pick = random.choice(words)
     guessed = []
+    print(f"The choices are {words}")
     while True:
-        print(f"The choices are {words}")
-        print(f"You've already guessed {guessed}")
-        print(f"You've guessed {len(guessed)} times")
-        user = input("Pick one of the animals: ")
+        user = input("Guess one of the animals: ")
         user = user.lower()
         if user == pick:
             print("That's it!")
@@ -126,11 +124,14 @@ def guess_animal(words=["pig", "cat", "dog", "mouse", "rat"]):
         else:
             guessed.append(user)
             print("No!")
+        print(f"\nYou've already guessed {guessed}")
+        print(f"You've guessed {len(guessed)} times")
 
 
 # main prog body
 
-# guess_animal()
+guess_animal()
 
 if __name__ == "__main__":
-    doctest.testmod(verbose=True)
+    # doctest.testmod(verbose=True)
+    pass
