@@ -80,9 +80,9 @@ def vat_calc():
     cost = float(cost)
     reduced = input("Is the class of good reduced (Y/N): ")
     if reduced[0].lower() == 'y':
-        rate = 0.23
+        rate = 0.135
     else:
-        rate = 0.13
+        rate = 0.23
     total = cost + cost * rate
     return total
 
