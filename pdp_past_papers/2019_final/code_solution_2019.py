@@ -102,5 +102,6 @@ num_translator[2][-1] = 'deux'
 # Q4civ
 for entry in num_translator:
     print(f"{entry}, -> {num_translator[entry]}")
+
      
 
